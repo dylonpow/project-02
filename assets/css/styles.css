@@ -169,11 +169,25 @@ a {
 
 .client .brands {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     margin-top: 70px;
 }
-
+.client .brands a {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0px 42px;
+    opacity: 0.9;
+    border-radius: 12px;
+}
+.client .brands a:hover {
+    box-shadow: 10px 8px 33px -6px rgba(0, 0, 0, 0.55);
+}
+.client .brands .brand-ama {
+    height: 90px;
+    object-fit: cover;
+}
 /* ===========================GUIDES============================= */
 
 .guides {
