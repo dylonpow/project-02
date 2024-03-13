@@ -14,6 +14,10 @@ body {
     font-size: 1.6rem;
     font-family: "Poppins", sans-serif;
 }
+html,
+body {
+    scroll-behavior: smooth;
+}
 
 /* ======================COMMON============================ */
 .content {
@@ -66,7 +70,9 @@ body {
 .fixed-header {
     background: #e6f0ff;
     padding-top: 24px;
+    /*pt:24; = add the missing */
     position: sticky;
+    /* phần thiếu -24px để khi roll không mất phần pt: 24; */
     top: -24px;
     z-index: 1;
 }
@@ -74,7 +80,6 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 37px;
     padding: 12px 0;
 }
 
