@@ -54,16 +54,28 @@ body {
     overflow: hidden;
 }
 /* ===================HEADER========================= */
-.header {
+.anchor {
     height: 100vh;
     background: #e6f0ff;
     position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =============FIXED-HEADER========= */
+.fixed-header {
+    background: #e6f0ff;
+    padding-top: 24px;
+    position: sticky;
+    top: -24px;
+    z-index: 1;
 }
 
 .navbar {
     display: flex;
     align-items: center;
-    padding-top: 39px;
+    padding-top: 37px;
+    padding: 12px 0;
 }
 
 .navbar ul {
